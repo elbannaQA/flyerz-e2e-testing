@@ -1,4 +1,4 @@
-package registeration;
+package registration;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -9,7 +9,7 @@ import serialization.LoginBody;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-public class RegisterationTests {
+public class RegistrationTests {
     private final String url = "https://flyerz-stg.convertedin.com/api";
     LoginBody loginBody = new LoginBody();
     private String otp;

@@ -16,6 +16,7 @@ public class SocialMediaChannelsTests {
     private final String url = "https://flyerz-stg.convertedin.com/api";
     LoginBody loginBody = new LoginBody();
     private String otp;
+    private String apiToken;
 
 
     @DataProvider()
@@ -71,19 +72,28 @@ public class SocialMediaChannelsTests {
                 .body("data.user.email.email", equalTo("m.ahmed@converted.in"))
                 .body("data.user.mobileNumber.number", equalTo(loginBody.getMobileNumber()));
 
+        apiToken = response.getBody().jsonPath().getString("data.apiToken");
+        System.out.println(apiToken);
+
     }
 
 
-    @Test(dependsOnMethods = {"loginWithVerifiedAccount"})
+    @Test(dependsOnMethods = {"receiveOTP", "loginWithVerifiedAccount"})
     public void checkThatAllChannelsRetrieved() {
+
         Response response =
                 given()
-                        .when()
+                        .contentType("application/json")
                         .header("country", "1")
+                        .header("Authorization", "Bearer " + apiToken)
+                        .when()
                         .get(url + "/v2/channels");
 
         response
                 .then()
-                .log().body();
+                .log().body()
+                .assertThat()
+                .contentType(ContentType.JSON)
+                .statusCode(200);
     }
 }
