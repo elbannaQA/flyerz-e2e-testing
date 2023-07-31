@@ -3,8 +3,6 @@ package serialization;
 public class LoginBody {
     private String countryCode;
     private String mobileNumber;
-
-
     private String otp;
     private String firstName;
     private String lastName;
