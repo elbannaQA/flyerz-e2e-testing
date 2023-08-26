@@ -1,4 +1,4 @@
-package util;
+package api_util;
 
 public class Config {
 

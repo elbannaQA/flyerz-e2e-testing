@@ -2,7 +2,7 @@ package api;
 
 import io.restassured.response.Response;
 import serialization.LoginBody;
-import util.ApiBase;
+import api_util.ApiBase;
 
 public class Auth {
     ApiBase apiBase = new ApiBase();

@@ -1,10 +1,10 @@
-package util;
+package api_util;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-import static util.Config.url_stg;
+import static api_util.Config.url_stg;
 
 public class ApiBase {
     public Response post(Object body, String endPoint, Country country) {
