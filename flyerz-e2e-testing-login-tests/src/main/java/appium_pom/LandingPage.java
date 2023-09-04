@@ -1,4 +1,4 @@
-package pom;
+package appium_pom;
 
 import appium_util.AppiumActions;
 import appium_util.Locators;

@@ -1,4 +1,4 @@
-package pom;
+package appium_pom;
 
 import appium_util.AppiumActions;
 import appium_util.Locators;
@@ -10,11 +10,18 @@ import static appium_util.AppiumBase.wait;
 public class SingInPage {
     AppiumActions appiumActions = new AppiumActions();
     Locators locators = new Locators();
+
     public void loginInSuccessfully(String phoneNumber, String otp) throws InterruptedException {
         wait.until(ExpectedConditions.elementToBeClickable(locators.phone_number_text_field));
         appiumActions.sendKeys(locators.phone_number_text_field, phoneNumber);
         appiumActions.click(locators.next_Btn);
-        Thread.sleep(4000);
+        wait.until(ExpectedConditions.elementToBeClickable(locators.close_tab_button));
+        if (appiumActions.isDisplayed(locators.close_tab_button)) {
+            appiumActions.click(locators.close_tab_button);
+        } else {
+            System.out.println("Close tab isn't displayed !");
+        }
+        wait.until(ExpectedConditions.elementToBeClickable(locators.otp_field));
         appiumActions.sendKeys(locators.otp_field, otp);
         appiumActions.click(locators.confirm_Btn);
         wait.until(ExpectedConditions.elementToBeClickable(locators.cancel_permission_popup));
