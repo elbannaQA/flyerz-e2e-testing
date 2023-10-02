@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-All_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">All Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-All_Test_Suite" class="navigator-link ">
+                    <span>C:\Users\Administrator\Documents\GitHub\flyerz-e2e-testing\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-All_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-All_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-All_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-All_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-All_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-All_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">20 methods, 6 failed,   14 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods failed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods failed suite-All_Test_Suite"> (show)</a> <!-- show-methods failed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-All_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="appium_tests.SettingsTests" class="method navigator-link" hash-for-method="changePageSuccessfully">changePageSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="appium_tests.SettingsTests" class="method navigator-link" hash-for-method="checkThatPhoneNumberDisplayedSuccessfully">checkThatPhoneNumberDisplayedSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="appium_tests.SettingsTests" class="method navigator-link" hash-for-method="successfulEditEmail">successfulEditEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="appium_tests.SettingsTests" class="method navigator-link" hash-for-method="successfulEditName">successfulEditName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="appium_tests.SeparateSignUpAndSignInTests" class="method navigator-link" hash-for-method="successfulSignUp">successfulSignUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="appium_tests.SettingsTests" class="method navigator-link" hash-for-method="updatePhoneNumberWithAnExistingPhoneNumber">updatePhoneNumberWithAnExistingPhoneNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-All_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods passed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods passed suite-All_Test_Suite"> (show)</a> <!-- show-methods passed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-All_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="login_tests.LoginAndRegistrationTests" class="method navigator-link" hash-for-method="checkLoginByOneAccountAndVerified(1224084500, +20)">checkLoginByOneAccountAndVerified(1224084500, +20)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="login_tests.LoginAndRegistrationTests" class="method navigator-link" hash-for-method="checkLoginByOneAccountAndVerified(1022466127, +20)">checkLoginByOneAccountAndVerified(1022466127, +20)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="login_tests.LoginAndRegistrationTests" class="method navigator-link" hash-for-method="checkLoginByOneAccountAndVerified(1234567892, +20)">checkLoginByOneAccountAndVerified(1234567892, +20)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="login_tests.LoginAndRegistrationTests" class="method navigator-link" hash-for-method="checkLoginByOneAccountAndVerified(1016467532, +20)">checkLoginByOneAccountAndVerified(1016467532, +20)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="mobile_check_tests.MobileVerificationTests" class="method navigator-link" hash-for-method="checkMobileVerification(+20, 1016467532)">checkMobileVerification(+20, 1016467532)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="mobile_check_tests.MobileVerificationTests" class="method navigator-link" hash-for-method="checkMobileVerification(+20, 1234567892)">checkMobileVerification(+20, 1234567892)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="mobile_check_tests.MobileVerificationTests" class="method navigator-link" hash-for-method="checkMobileVerification(+20, 1022466127)">checkMobileVerification(+20, 1022466127)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="mobile_check_tests.MobileVerificationTests" class="method navigator-link" hash-for-method="checkMobileVerification(+20, 1224084500)">checkMobileVerification(+20, 1224084500)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="socialMediaChannels.SocialMediaChannelsTests" class="method navigator-link" hash-for-method="receiveOTP(1016467532, +20)">receiveOTP(1016467532, +20)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="appium_tests.SeparateSignUpAndSignInTests" class="method navigator-link" hash-for-method="successfulSignIn">successfulSignIn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="firebase_otp_tests.FireBaseOTPTests" class="method navigator-link" hash-for-method="verifyFireBaseOtpTests(65679654, +962)">verifyFireBaseOtpTests(65679654, +962)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="firebase_otp_tests.FireBaseOTPTests" class="method navigator-link" hash-for-method="verifyFireBaseOtpTests(7847973361, +964)">verifyFireBaseOtpTests(7847973361, +964)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="firebase_otp_tests.FireBaseOTPTests" class="method navigator-link" hash-for-method="verifyFireBaseOtpTests(6139199400, +55)">verifyFireBaseOtpTests(6139199400, +55)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="firebase_otp_tests.FireBaseOTPTests" class="method navigator-link" hash-for-method="verifyFireBaseOtpTests(1016467532, +20)">verifyFireBaseOtpTests(1016467532, +20)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-All_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">appium_tests.SeparateSignUpAndSignInTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulSignUp">
+                  </a> <!-- successfulSignUp -->
+                  <span class="method-name">successfulSignUp</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: AppiumBy.id: in.converted.flyerz.debug:id/btn_next (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:app: C:\Users\Administrator\Down..., appium:appPackage: in.converted.flyerz.debug, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Administrator\Down..., automationName: uiautomator2, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2131, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: bceed0bf-5222-461f-acce-80572db2a02d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at appium_pom.LandingPage.hitCheckMobileNumberPage(LandingPage.java:13)
+	at appium_tests.SeparateSignUpAndSignInTests.successfulSignUp(SeparateSignUpAndSignInTests.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">appium_tests.SettingsTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="changePageSuccessfully">
+                  </a> <!-- changePageSuccessfully -->
+                  <span class="method-name">changePageSuccessfully</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: AppiumBy.id: in.converted.flyerz.debug:id/btn_next (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:app: C:\Users\Administrator\Down..., appium:appPackage: in.converted.flyerz.debug, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Administrator\Down..., automationName: uiautomator2, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2131, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: bceed0bf-5222-461f-acce-80572db2a02d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at appium_pom.LandingPage.hitCheckMobileNumberPage(LandingPage.java:13)
+	at appium_tests.SettingsTests.changePageSuccessfully(SettingsTests.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThatPhoneNumberDisplayedSuccessfully">
+                  </a> <!-- checkThatPhoneNumberDisplayedSuccessfully -->
+                  <span class="method-name">checkThatPhoneNumberDisplayedSuccessfully</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: AppiumBy.id: in.converted.flyerz.debug:id/btn_next (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:app: C:\Users\Administrator\Down..., appium:appPackage: in.converted.flyerz.debug, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Administrator\Down..., automationName: uiautomator2, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2131, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: bceed0bf-5222-461f-acce-80572db2a02d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at appium_pom.LandingPage.hitCheckMobileNumberPage(LandingPage.java:13)
+	at appium_tests.SettingsTests.checkThatPhoneNumberDisplayedSuccessfully(SettingsTests.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulEditEmail">
+                  </a> <!-- successfulEditEmail -->
+                  <span class="method-name">successfulEditEmail</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: AppiumBy.id: in.converted.flyerz.debug:id/btn_next (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:app: C:\Users\Administrator\Down..., appium:appPackage: in.converted.flyerz.debug, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Administrator\Down..., automationName: uiautomator2, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2131, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: bceed0bf-5222-461f-acce-80572db2a02d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at appium_pom.LandingPage.hitCheckMobileNumberPage(LandingPage.java:13)
+	at appium_tests.SettingsTests.successfulEditEmail(SettingsTests.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulEditName">
+                  </a> <!-- successfulEditName -->
+                  <span class="method-name">successfulEditName</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: AppiumBy.id: in.converted.flyerz.debug:id/btn_next (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:app: C:\Users\Administrator\Down..., appium:appPackage: in.converted.flyerz.debug, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Administrator\Down..., automationName: uiautomator2, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2131, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: bceed0bf-5222-461f-acce-80572db2a02d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at appium_pom.LandingPage.hitCheckMobileNumberPage(LandingPage.java:13)
+	at appium_tests.SettingsTests.successfulEditName(SettingsTests.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updatePhoneNumberWithAnExistingPhoneNumber">
+                  </a> <!-- updatePhoneNumberWithAnExistingPhoneNumber -->
+                  <span class="method-name">updatePhoneNumberWithAnExistingPhoneNumber</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: AppiumBy.id: in.converted.flyerz.debug:id/btn_next (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:app: C:\Users\Administrator\Down..., appium:appPackage: in.converted.flyerz.debug, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Administrator\Down..., automationName: uiautomator2, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2131, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: bceed0bf-5222-461f-acce-80572db2a02d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at appium_pom.LandingPage.hitCheckMobileNumberPage(LandingPage.java:13)
+	at appium_tests.SettingsTests.updatePhoneNumberWithAnExistingPhoneNumber(SettingsTests.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">mobile_check_tests.MobileVerificationTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkMobileVerification(+20, 1016467532)">
+                  </a> <!-- checkMobileVerification(+20, 1016467532) -->
+                  <span class="method-name">checkMobileVerification</span>
+                  <span class="parameters">(+20,1016467532)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkMobileVerification(+20, 1234567892)">
+                  </a> <!-- checkMobileVerification(+20, 1234567892) -->
+                  <span class="method-name">checkMobileVerification</span>
+                  <span class="parameters">(+20,1234567892)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkMobileVerification(+20, 1022466127)">
+                  </a> <!-- checkMobileVerification(+20, 1022466127) -->
+                  <span class="method-name">checkMobileVerification</span>
+                  <span class="parameters">(+20,1022466127)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkMobileVerification(+20, 1224084500)">
+                  </a> <!-- checkMobileVerification(+20, 1224084500) -->
+                  <span class="method-name">checkMobileVerification</span>
+                  <span class="parameters">(+20,1224084500)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">appium_tests.SeparateSignUpAndSignInTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulSignIn">
+                  </a> <!-- successfulSignIn -->
+                  <span class="method-name">successfulSignIn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">socialMediaChannels.SocialMediaChannelsTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="receiveOTP(1016467532, +20)">
+                  </a> <!-- receiveOTP(1016467532, +20) -->
+                  <span class="method-name">receiveOTP</span>
+                  <span class="parameters">(1016467532,+20)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">firebase_otp_tests.FireBaseOTPTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFireBaseOtpTests(65679654, +962)">
+                  </a> <!-- verifyFireBaseOtpTests(65679654, +962) -->
+                  <span class="method-name">verifyFireBaseOtpTests</span>
+                  <span class="parameters">(65679654,+962)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFireBaseOtpTests(7847973361, +964)">
+                  </a> <!-- verifyFireBaseOtpTests(7847973361, +964) -->
+                  <span class="method-name">verifyFireBaseOtpTests</span>
+                  <span class="parameters">(7847973361,+964)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFireBaseOtpTests(6139199400, +55)">
+                  </a> <!-- verifyFireBaseOtpTests(6139199400, +55) -->
+                  <span class="method-name">verifyFireBaseOtpTests</span>
+                  <span class="parameters">(6139199400,+55)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFireBaseOtpTests(1016467532, +20)">
+                  </a> <!-- verifyFireBaseOtpTests(1016467532, +20) -->
+                  <span class="method-name">verifyFireBaseOtpTests</span>
+                  <span class="parameters">(1016467532,+20)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">login_tests.LoginAndRegistrationTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkLoginByOneAccountAndVerified(1224084500, +20)">
+                  </a> <!-- checkLoginByOneAccountAndVerified(1224084500, +20) -->
+                  <span class="method-name">checkLoginByOneAccountAndVerified</span>
+                  <span class="parameters">(1224084500,+20)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkLoginByOneAccountAndVerified(1022466127, +20)">
+                  </a> <!-- checkLoginByOneAccountAndVerified(1022466127, +20) -->
+                  <span class="method-name">checkLoginByOneAccountAndVerified</span>
+                  <span class="parameters">(1022466127,+20)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkLoginByOneAccountAndVerified(1234567892, +20)">
+                  </a> <!-- checkLoginByOneAccountAndVerified(1234567892, +20) -->
+                  <span class="method-name">checkLoginByOneAccountAndVerified</span>
+                  <span class="parameters">(1234567892,+20)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkLoginByOneAccountAndVerified(1016467532, +20)">
+                  </a> <!-- checkLoginByOneAccountAndVerified(1016467532, +20) -->
+                  <span class="method-name">checkLoginByOneAccountAndVerified</span>
+                  <span class="parameters">(1016467532,+20)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+        </div> <!-- panel All_Test_Suite -->
+        <div panel-name="test-xml-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Administrator\Documents\GitHub\flyerz-e2e-testing\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;All Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;C:/Users/Administrator/Documents/GitHub/flyerz-e2e-testing&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;appium_tests.SeparateSignUpAndSignInTests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;successfulSignIn&quot;/&gt;
+          &lt;include name=&quot;successfulSignUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- appium_tests.SeparateSignUpAndSignInTests --&gt;
+      &lt;class name=&quot;appium_tests.SettingsTests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;successfulEditName&quot;/&gt;
+          &lt;include name=&quot;successfulEditEmail&quot;/&gt;
+          &lt;include name=&quot;updatePhoneNumberWithAnExistingPhoneNumber&quot;/&gt;
+          &lt;include name=&quot;checkThatPhoneNumberDisplayedSuccessfully&quot;/&gt;
+          &lt;include name=&quot;changePageSuccessfully&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- appium_tests.SettingsTests --&gt;
+      &lt;class name=&quot;firebase_otp_tests.FireBaseOTPTests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifyFireBaseOtpTests&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- firebase_otp_tests.FireBaseOTPTests --&gt;
+      &lt;class name=&quot;login_tests.LoginAndRegistrationTests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;checkLoginByOneAccountAndVerified&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- login_tests.LoginAndRegistrationTests --&gt;
+      &lt;class name=&quot;mobile_check_tests.MobileVerificationTests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;checkMobileVerification&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- mobile_check_tests.MobileVerificationTests --&gt;
+      &lt;class name=&quot;socialMediaChannels.SocialMediaChannelsTests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;receiveOTP&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- socialMediaChannels.SocialMediaChannelsTests --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- C:/Users/Administrator/Documents/GitHub/flyerz-e2e-testing --&gt;
+&lt;/suite&gt; &lt;!-- All Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">C:/Users/Administrator/Documents/GitHub/flyerz-e2e-testing (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_All_Test_Suite');
+function tableData_All_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(20);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'checkThatPhoneNumberDisplayedSuccessfully')
+data.setCell(0, 2, 'appium_tests.SettingsTests')
+data.setCell(0, 3, 60547);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'updatePhoneNumberWithAnExistingPhoneNumber')
+data.setCell(1, 2, 'appium_tests.SettingsTests')
+data.setCell(1, 3, 60540);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'successfulEditEmail')
+data.setCell(2, 2, 'appium_tests.SettingsTests')
+data.setCell(2, 3, 60503);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'changePageSuccessfully')
+data.setCell(3, 2, 'appium_tests.SettingsTests')
+data.setCell(3, 3, 60503);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'successfulEditName')
+data.setCell(4, 2, 'appium_tests.SettingsTests')
+data.setCell(4, 3, 60056);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'successfulSignUp')
+data.setCell(5, 2, 'appium_tests.SeparateSignUpAndSignInTests')
+data.setCell(5, 3, 60024);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'successfulSignIn')
+data.setCell(6, 2, 'appium_tests.SeparateSignUpAndSignInTests')
+data.setCell(6, 3, 24197);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyFireBaseOtpTests')
+data.setCell(7, 2, 'firebase_otp_tests.FireBaseOTPTests')
+data.setCell(7, 3, 2236);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'checkLoginByOneAccountAndVerified')
+data.setCell(8, 2, 'login_tests.LoginAndRegistrationTests')
+data.setCell(8, 3, 1248);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'checkLoginByOneAccountAndVerified')
+data.setCell(9, 2, 'login_tests.LoginAndRegistrationTests')
+data.setCell(9, 3, 1113);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'checkLoginByOneAccountAndVerified')
+data.setCell(10, 2, 'login_tests.LoginAndRegistrationTests')
+data.setCell(10, 3, 933);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'checkLoginByOneAccountAndVerified')
+data.setCell(11, 2, 'login_tests.LoginAndRegistrationTests')
+data.setCell(11, 3, 576);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'checkMobileVerification')
+data.setCell(12, 2, 'mobile_check_tests.MobileVerificationTests')
+data.setCell(12, 3, 390);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyFireBaseOtpTests')
+data.setCell(13, 2, 'firebase_otp_tests.FireBaseOTPTests')
+data.setCell(13, 3, 365);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyFireBaseOtpTests')
+data.setCell(14, 2, 'firebase_otp_tests.FireBaseOTPTests')
+data.setCell(14, 3, 351);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'checkMobileVerification')
+data.setCell(15, 2, 'mobile_check_tests.MobileVerificationTests')
+data.setCell(15, 3, 323);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'checkMobileVerification')
+data.setCell(16, 2, 'mobile_check_tests.MobileVerificationTests')
+data.setCell(16, 3, 311);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'checkMobileVerification')
+data.setCell(17, 2, 'mobile_check_tests.MobileVerificationTests')
+data.setCell(17, 3, 281);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyFireBaseOtpTests')
+data.setCell(18, 2, 'firebase_otp_tests.FireBaseOTPTests')
+data.setCell(18, 3, 280);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'receiveOTP')
+data.setCell(19, 2, 'socialMediaChannels.SocialMediaChannelsTests')
+data.setCell(19, 3, 277);
+window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <div id="times-div-All_Test_Suite">
+              </div> <!-- times-div-All_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">socialMediaChannels.SocialMediaChannelsTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">loginWithVerifiedAccount</span>
+                <br/>
+                <span class="ignored-method-name">checkThatAllChannelsRetrieved</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">appium_tests.SeparateSignUpAndSignInTests</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">inti</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">appium_tests.SettingsTests</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">8520 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">appium_tests.SeparateSignUpAndSignInTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">successfulSignIn</span>
+                <span class="method-start">16259 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">successfulSignUp</span>
+                <span class="method-start">40458 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">appium_tests.SettingsTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">successfulEditName</span>
+                <span class="method-start">100489 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">successfulEditEmail</span>
+                <span class="method-start">160546 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">updatePhoneNumberWithAnExistingPhoneNumber</span>
+                <span class="method-start">221051 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkThatPhoneNumberDisplayedSuccessfully</span>
+                <span class="method-start">281592 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">changePageSuccessfully</span>
+                <span class="method-start">342140 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">firebase_otp_tests.FireBaseOTPTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyFireBaseOtpTests(1016467532, +20)</span>
+                <span class="method-start">402649 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyFireBaseOtpTests(7847973361, +964)</span>
+                <span class="method-start">404885 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyFireBaseOtpTests(65679654, +962)</span>
+                <span class="method-start">405237 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyFireBaseOtpTests(6139199400, +55)</span>
+                <span class="method-start">405603 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">login_tests.LoginAndRegistrationTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkLoginByOneAccountAndVerified(1016467532, +20)</span>
+                <span class="method-start">405884 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkLoginByOneAccountAndVerified(1224084500, +20)</span>
+                <span class="method-start">407132 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkLoginByOneAccountAndVerified(1234567892, +20)</span>
+                <span class="method-start">408245 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkLoginByOneAccountAndVerified(1022466127, +20)</span>
+                <span class="method-start">409178 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">mobile_check_tests.MobileVerificationTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkMobileVerification(+20, 1016467532)</span>
+                <span class="method-start">409755 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkMobileVerification(+20, 1224084500)</span>
+                <span class="method-start">410036 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkMobileVerification(+20, 1234567892)</span>
+                <span class="method-start">410427 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkMobileVerification(+20, 1022466127)</span>
+                <span class="method-start">410739 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">socialMediaChannels.SocialMediaChannelsTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">receiveOTP(1016467532, +20)</span>
+                <span class="method-start">411063 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">appium_tests.SeparateSignUpAndSignInTests</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">quit</span>
+                <span class="method-start">411341 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

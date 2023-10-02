@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="C:/Users/Administrator/Documents/GitHub/flyerz-e2e-testing(failed)">
+    <classes>
+      <class name="appium_tests.SeparateSignUpAndSignInTests">
+        <methods>
+          <include name="quit"/>
+          <include name="inti"/>
+          <include name="successfulSignUp"/>
+        </methods>
+      </class> <!-- appium_tests.SeparateSignUpAndSignInTests -->
+      <class name="appium_tests.SettingsTests">
+        <methods>
+          <include name="updatePhoneNumberWithAnExistingPhoneNumber"/>
+          <include name="checkThatPhoneNumberDisplayedSuccessfully"/>
+          <include name="successfulEditEmail"/>
+          <include name="successfulEditName"/>
+          <include name="init"/>
+          <include name="changePageSuccessfully"/>
+        </methods>
+      </class> <!-- appium_tests.SettingsTests -->
+    </classes>
+  </test> <!-- C:/Users/Administrator/Documents/GitHub/flyerz-e2e-testing(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

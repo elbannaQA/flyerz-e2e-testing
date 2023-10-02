@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="appiumTesting">
+        <classes>
+            <class name="appium_tests.SeparateSignUpAndSignInTests">
+            <methods>
+                <include name="successfulSignIn"/>
+                <include name="successfulSignUp"/>
+            </methods>
+            </class>
+            <class name="appium_tests.SettingsTests">
+                <methods>
+                    <include name="successfulEditName"/>
+                    <include name="successfulEditEmail"/>
+                    <include name="updatePhoneNumberWithAnExistingPhoneNumber"/>
+                    <include name="checkThatPhoneNumberDisplayedSuccessfully"/>
+                    <include name="changePageSuccessfully"/>
+                </methods>
+            </class>
+            <class name="firebase_otp_tests.FireBaseOTPTests">
+                <methods><include name="verifyFireBaseOtpTests"/>
+                </methods>
+            </class>
+            <class name="login_tests.LoginAndRegistrationTests">
+                <methods>
+                    <include name="checkLoginByOneAccountAndVerified"/>
+                </methods>
+            </class>
+            <class name="mobile_check_tests.MobileVerificationTests">
+                <methods><include name="checkMobileVerification"/>
+                </methods>
+            </class>
+            <class name="socialMediaChannels.SocialMediaChannelsTests">
+                <methods>
+                    <include name="receiveOTP"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

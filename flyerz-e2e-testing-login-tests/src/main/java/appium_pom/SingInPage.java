@@ -16,13 +16,11 @@ public class SingInPage {
         appiumActions.sendKeys(locators.phone_number_text_field, phoneNumber);
         appiumActions.click(locators.next_Btn);
         wait.until(ExpectedConditions.elementToBeClickable(locators.close_tab_button));
-        if (appiumActions.isDisplayed(locators.close_tab_button)) {
-            appiumActions.click(locators.close_tab_button);
-        } else {
-            System.out.println("Close tab isn't displayed !");
-        }
+        appiumActions.click(locators.close_tab_button);
+        //Thread.sleep(7000);
         wait.until(ExpectedConditions.elementToBeClickable(locators.otp_field));
         appiumActions.sendKeys(locators.otp_field, otp);
+        wait.until(ExpectedConditions.elementToBeClickable(locators.confirm_Btn));
         appiumActions.click(locators.confirm_Btn);
         wait.until(ExpectedConditions.elementToBeClickable(locators.cancel_permission_popup));
         appiumActions.click(locators.cancel_permission_popup);

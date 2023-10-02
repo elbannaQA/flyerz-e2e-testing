@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/Administrator/Documents/GitHub/flyerz-e2e-testing/flyerz-e2e-testing-login-tests/src/test/java/appium_tests/SeparateSignUpAndSignInTests.java">
+    <classes>
+        <class name="appium_tests.SeparateSignUpAndSignInTests">
+            <methods>
+                <include name="successfulSignIn"/>
+                <include name="successfulSignUp"/>
+            </methods>
+        </class>
+    </classes>
+</test>
+</suite>

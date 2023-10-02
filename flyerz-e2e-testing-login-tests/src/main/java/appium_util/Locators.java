@@ -18,10 +18,35 @@ public class Locators {
    public By settings_button = AppiumBy.accessibilityId("الاعدادات");
    public By editProfile_button = AppiumBy.id("in.converted.flyerz.debug:id/tv_edit_profile");
    public By email_field = AppiumBy.id("in.converted.flyerz.debug:id/et_email");
+   public By updatePhoneNumber_btn = AppiumBy.id("in.converted.flyerz.debug:id/btn_update_phone");
    public By name_text = AppiumBy.id("in.converted.flyerz.debug:id/tv_name");
+   public By validation_msg = AppiumBy.id("in.converted.flyerz.debug:id/snackbar_text");
+   public By myAccounts_btn = AppiumBy.id("in.converted.flyerz.debug:id/tv_my_accounts");
+   public By changePage_btn = AppiumBy.id("in.converted.flyerz.debug:id/tv_change_page");
+   public By selectPage_btn = AppiumBy.className("android.widget.RadioButton");
+   public By selectCategory_btn = AppiumBy.className("androidx.recyclerview.widget.RecyclerView");
+   public By pageName_txt = AppiumBy.id("in.converted.flyerz.debug:id/tv_page_name");
+   public By pageNames_txt = AppiumBy.id("in.converted.flyerz.debug:id/tv_name");
    public By createAd_btn = AppiumBy.id("in.converted.flyerz.debug:id/btn_add_ad");
-   public By startYourAd_btn = AppiumBy.id("in.converted.flyerz.debug:id/btn_next_step");
+   public By createAds_nextBtn = AppiumBy.id("in.converted.flyerz.debug:id/btn_next_step");
+   public By select_adsGoal = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout" +
+           "/android.widget.FrameLayout/android.widget.LinearLayout" +
+           "/android.widget.FrameLayout/android.view.ViewGroup" +
+           "/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView" +
+           "/android.widget.FrameLayout/android.widget.ScrollView/android.view.ViewGroup" +
+           "/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]" +
+           "/android.view.ViewGroup");
 
-
+   public By select_post_btn = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.TextView");
+   public By selectCountry_ddl = AppiumBy.id("in.converted.flyerz.debug:id/tv_select_country");
+   public By selectCountry_btn = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.TextView");
+   public By selectCities_ddl = AppiumBy.id("in.converted.flyerz.debug:id/tv_search_cities");
+   public By selectCities_btn = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.TextView");
+   public By budget_txt = AppiumBy.id("in.converted.flyerz.debug:id/et_budget");
+   public By currency_sign = AppiumBy.id("in.converted.flyerz.debug:id/tv_currency");
+   public By back_to_homePage_btn = AppiumBy.id("in.converted.flyerz.debug:id/btn_skip");
+   public By adTxt = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/androidx.appcompat.widget.LinearLayoutCompat[1]/android.view.ViewGroup/android.widget.TextView[1]");
+   public By adStatus = AppiumBy.id("in.converted.flyerz.debug:id/tv_ad_status_value");
+   public By adBudget = AppiumBy.id("in.converted.flyerz.debug:id/tv_value");
 
 }

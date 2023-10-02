@@ -24,7 +24,7 @@ public class SeparateSignUpAndSignInTests {
     @Test
     public void successfulSignIn() throws InterruptedException {
         landingPage.hitCheckMobileNumberPage();
-        singInPage.loginInSuccessfully("1003030921", "123456");
+        singInPage.loginInSuccessfully("1001308575", "123456");
     }
 
     @Test

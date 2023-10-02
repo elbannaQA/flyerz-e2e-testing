@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="20" passed="14" failed="6" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-13T14:52:24 EET" name="All Test Suite" finished-at="2023-09-13T14:59:15 EET" duration-ms="411352">
+    <groups>
+    </groups>
+    <test started-at="2023-09-13T14:52:24 EET" name="C:/Users/Administrator/Documents/GitHub/flyerz-e2e-testing" finished-at="2023-09-13T14:59:15 EET" duration-ms="411352">
+      <class name="appium_tests.SeparateSignUpAndSignInTests">
+        <test-method is-config="true" signature="inti()[pri:0, instance:appium_tests.SeparateSignUpAndSignInTests@74e52303]" started-at="2023-09-13T14:52:24 EET" name="inti" finished-at="2023-09-13T14:52:32 EET" duration-ms="8518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inti -->
+        <test-method signature="successfulSignIn()[pri:0, instance:appium_tests.SeparateSignUpAndSignInTests@74e52303]" started-at="2023-09-13T14:52:40 EET" name="successfulSignIn" finished-at="2023-09-13T14:53:04 EET" duration-ms="24197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulSignIn -->
+        <test-method signature="successfulSignUp()[pri:0, instance:appium_tests.SeparateSignUpAndSignInTests@74e52303]" started-at="2023-09-13T14:53:04 EET" name="successfulSignUp" finished-at="2023-09-13T14:54:04 EET" duration-ms="60024" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: AppiumBy.id: in.converted.flyerz.debug:id/btn_next (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:app: C:\Users\Administrator\Down..., appium:appPackage: in.converted.flyerz.debug, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Administrator\Down..., automationName: uiautomator2, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2131, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: bceed0bf-5222-461f-acce-80572db2a02d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: AppiumBy.id: in.converted.flyerz.debug:id/btn_next (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:app: C:\Users\Administrator\Down..., appium:appPackage: in.converted.flyerz.debug, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Administrator\Down..., automationName: uiautomator2, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2131, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: bceed0bf-5222-461f-acce-80572db2a02d
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at appium_pom.LandingPage.hitCheckMobileNumberPage(LandingPage.java:13)
+at appium_tests.SeparateSignUpAndSignInTests.successfulSignUp(SeparateSignUpAndSignInTests.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulSignUp -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:appium_tests.SeparateSignUpAndSignInTests@74e52303]" started-at="2023-09-13T14:59:15 EET" name="quit" finished-at="2023-09-13T14:59:15 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- appium_tests.SeparateSignUpAndSignInTests -->
+      <class name="mobile_check_tests.MobileVerificationTests">
+        <test-method signature="checkMobileVerification(java.lang.String,java.lang.String)[pri:0, instance:mobile_check_tests.MobileVerificationTests@6b927fb]" started-at="2023-09-13T14:59:13 EET" name="checkMobileVerification" data-provider="mobileNumbers" finished-at="2023-09-13T14:59:14 EET" duration-ms="281" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[+20]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1016467532]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMobileVerification -->
+        <test-method signature="checkMobileVerification(java.lang.String,java.lang.String)[pri:0, instance:mobile_check_tests.MobileVerificationTests@6b927fb]" started-at="2023-09-13T14:59:14 EET" name="checkMobileVerification" data-provider="mobileNumbers" finished-at="2023-09-13T14:59:14 EET" duration-ms="390" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[+20]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1224084500]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMobileVerification -->
+        <test-method signature="checkMobileVerification(java.lang.String,java.lang.String)[pri:0, instance:mobile_check_tests.MobileVerificationTests@6b927fb]" started-at="2023-09-13T14:59:14 EET" name="checkMobileVerification" data-provider="mobileNumbers" finished-at="2023-09-13T14:59:14 EET" duration-ms="311" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[+20]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234567892]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMobileVerification -->
+        <test-method signature="checkMobileVerification(java.lang.String,java.lang.String)[pri:0, instance:mobile_check_tests.MobileVerificationTests@6b927fb]" started-at="2023-09-13T14:59:14 EET" name="checkMobileVerification" data-provider="mobileNumbers" finished-at="2023-09-13T14:59:15 EET" duration-ms="323" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[+20]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1022466127]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMobileVerification -->
+      </class> <!-- mobile_check_tests.MobileVerificationTests -->
+      <class name="socialMediaChannels.SocialMediaChannelsTests">
+        <test-method signature="receiveOTP(java.lang.String,java.lang.String)[pri:0, instance:socialMediaChannels.SocialMediaChannelsTests@4fb0f2b9]" started-at="2023-09-13T14:59:15 EET" name="receiveOTP" data-provider="mobileNumbers" finished-at="2023-09-13T14:59:15 EET" duration-ms="277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1016467532]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[+20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- receiveOTP -->
+      </class> <!-- socialMediaChannels.SocialMediaChannelsTests -->
+      <class name="login_tests.LoginAndRegistrationTests">
+        <test-method signature="checkLoginByOneAccountAndVerified(java.lang.String,java.lang.String)[pri:0, instance:login_tests.LoginAndRegistrationTests@4466af20]" started-at="2023-09-13T14:59:09 EET" name="checkLoginByOneAccountAndVerified" data-provider="mobileNumbers" finished-at="2023-09-13T14:59:11 EET" duration-ms="1248" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1016467532]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[+20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLoginByOneAccountAndVerified -->
+        <test-method signature="checkLoginByOneAccountAndVerified(java.lang.String,java.lang.String)[pri:0, instance:login_tests.LoginAndRegistrationTests@4466af20]" started-at="2023-09-13T14:59:11 EET" name="checkLoginByOneAccountAndVerified" data-provider="mobileNumbers" finished-at="2023-09-13T14:59:12 EET" duration-ms="1113" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1224084500]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[+20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLoginByOneAccountAndVerified -->
+        <test-method signature="checkLoginByOneAccountAndVerified(java.lang.String,java.lang.String)[pri:0, instance:login_tests.LoginAndRegistrationTests@4466af20]" started-at="2023-09-13T14:59:12 EET" name="checkLoginByOneAccountAndVerified" data-provider="mobileNumbers" finished-at="2023-09-13T14:59:13 EET" duration-ms="933" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1234567892]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[+20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLoginByOneAccountAndVerified -->
+        <test-method signature="checkLoginByOneAccountAndVerified(java.lang.String,java.lang.String)[pri:0, instance:login_tests.LoginAndRegistrationTests@4466af20]" started-at="2023-09-13T14:59:13 EET" name="checkLoginByOneAccountAndVerified" data-provider="mobileNumbers" finished-at="2023-09-13T14:59:13 EET" duration-ms="576" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1022466127]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[+20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLoginByOneAccountAndVerified -->
+      </class> <!-- login_tests.LoginAndRegistrationTests -->
+      <class name="firebase_otp_tests.FireBaseOTPTests">
+        <test-method signature="verifyFireBaseOtpTests(java.lang.String,java.lang.String)[pri:0, instance:firebase_otp_tests.FireBaseOTPTests@1fa268de]" started-at="2023-09-13T14:59:06 EET" name="verifyFireBaseOtpTests" data-provider="mobileNumbers" finished-at="2023-09-13T14:59:08 EET" duration-ms="2236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1016467532]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[+20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFireBaseOtpTests -->
+        <test-method signature="verifyFireBaseOtpTests(java.lang.String,java.lang.String)[pri:0, instance:firebase_otp_tests.FireBaseOTPTests@1fa268de]" started-at="2023-09-13T14:59:08 EET" name="verifyFireBaseOtpTests" data-provider="mobileNumbers" finished-at="2023-09-13T14:59:09 EET" duration-ms="351" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7847973361]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[+964]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFireBaseOtpTests -->
+        <test-method signature="verifyFireBaseOtpTests(java.lang.String,java.lang.String)[pri:0, instance:firebase_otp_tests.FireBaseOTPTests@1fa268de]" started-at="2023-09-13T14:59:09 EET" name="verifyFireBaseOtpTests" data-provider="mobileNumbers" finished-at="2023-09-13T14:59:09 EET" duration-ms="365" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[65679654]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[+962]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFireBaseOtpTests -->
+        <test-method signature="verifyFireBaseOtpTests(java.lang.String,java.lang.String)[pri:0, instance:firebase_otp_tests.FireBaseOTPTests@1fa268de]" started-at="2023-09-13T14:59:09 EET" name="verifyFireBaseOtpTests" data-provider="mobileNumbers" finished-at="2023-09-13T14:59:09 EET" duration-ms="280" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6139199400]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[+55]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFireBaseOtpTests -->
+      </class> <!-- firebase_otp_tests.FireBaseOTPTests -->
+      <class name="appium_tests.SettingsTests">
+        <test-method is-config="true" signature="init()[pri:0, instance:appium_tests.SettingsTests@4567f35d]" started-at="2023-09-13T14:52:32 EET" name="init" finished-at="2023-09-13T14:52:40 EET" duration-ms="7714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="successfulEditName()[pri:0, instance:appium_tests.SettingsTests@4567f35d]" started-at="2023-09-13T14:54:04 EET" name="successfulEditName" finished-at="2023-09-13T14:55:04 EET" duration-ms="60056" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: AppiumBy.id: in.converted.flyerz.debug:id/btn_next (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:app: C:\Users\Administrator\Down..., appium:appPackage: in.converted.flyerz.debug, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Administrator\Down..., automationName: uiautomator2, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2131, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: bceed0bf-5222-461f-acce-80572db2a02d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: AppiumBy.id: in.converted.flyerz.debug:id/btn_next (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:app: C:\Users\Administrator\Down..., appium:appPackage: in.converted.flyerz.debug, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Administrator\Down..., automationName: uiautomator2, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2131, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: bceed0bf-5222-461f-acce-80572db2a02d
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at appium_pom.LandingPage.hitCheckMobileNumberPage(LandingPage.java:13)
+at appium_tests.SettingsTests.successfulEditName(SettingsTests.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulEditName -->
+        <test-method signature="successfulEditEmail()[pri:0, instance:appium_tests.SettingsTests@4567f35d]" started-at="2023-09-13T14:55:04 EET" name="successfulEditEmail" finished-at="2023-09-13T14:56:05 EET" duration-ms="60503" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: AppiumBy.id: in.converted.flyerz.debug:id/btn_next (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:app: C:\Users\Administrator\Down..., appium:appPackage: in.converted.flyerz.debug, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Administrator\Down..., automationName: uiautomator2, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2131, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: bceed0bf-5222-461f-acce-80572db2a02d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: AppiumBy.id: in.converted.flyerz.debug:id/btn_next (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:app: C:\Users\Administrator\Down..., appium:appPackage: in.converted.flyerz.debug, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Administrator\Down..., automationName: uiautomator2, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2131, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: bceed0bf-5222-461f-acce-80572db2a02d
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at appium_pom.LandingPage.hitCheckMobileNumberPage(LandingPage.java:13)
+at appium_tests.SettingsTests.successfulEditEmail(SettingsTests.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulEditEmail -->
+        <test-method signature="updatePhoneNumberWithAnExistingPhoneNumber()[pri:0, instance:appium_tests.SettingsTests@4567f35d]" started-at="2023-09-13T14:56:05 EET" name="updatePhoneNumberWithAnExistingPhoneNumber" finished-at="2023-09-13T14:57:05 EET" duration-ms="60540" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: AppiumBy.id: in.converted.flyerz.debug:id/btn_next (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:app: C:\Users\Administrator\Down..., appium:appPackage: in.converted.flyerz.debug, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Administrator\Down..., automationName: uiautomator2, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2131, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: bceed0bf-5222-461f-acce-80572db2a02d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: AppiumBy.id: in.converted.flyerz.debug:id/btn_next (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:app: C:\Users\Administrator\Down..., appium:appPackage: in.converted.flyerz.debug, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Administrator\Down..., automationName: uiautomator2, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2131, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: bceed0bf-5222-461f-acce-80572db2a02d
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at appium_pom.LandingPage.hitCheckMobileNumberPage(LandingPage.java:13)
+at appium_tests.SettingsTests.updatePhoneNumberWithAnExistingPhoneNumber(SettingsTests.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePhoneNumberWithAnExistingPhoneNumber -->
+        <test-method signature="checkThatPhoneNumberDisplayedSuccessfully()[pri:0, instance:appium_tests.SettingsTests@4567f35d]" started-at="2023-09-13T14:57:05 EET" name="checkThatPhoneNumberDisplayedSuccessfully" finished-at="2023-09-13T14:58:06 EET" duration-ms="60547" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: AppiumBy.id: in.converted.flyerz.debug:id/btn_next (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:app: C:\Users\Administrator\Down..., appium:appPackage: in.converted.flyerz.debug, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Administrator\Down..., automationName: uiautomator2, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2131, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: bceed0bf-5222-461f-acce-80572db2a02d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: AppiumBy.id: in.converted.flyerz.debug:id/btn_next (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:app: C:\Users\Administrator\Down..., appium:appPackage: in.converted.flyerz.debug, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Administrator\Down..., automationName: uiautomator2, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2131, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: bceed0bf-5222-461f-acce-80572db2a02d
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at appium_pom.LandingPage.hitCheckMobileNumberPage(LandingPage.java:13)
+at appium_tests.SettingsTests.checkThatPhoneNumberDisplayedSuccessfully(SettingsTests.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThatPhoneNumberDisplayedSuccessfully -->
+        <test-method signature="changePageSuccessfully()[pri:0, instance:appium_tests.SettingsTests@4567f35d]" started-at="2023-09-13T14:58:06 EET" name="changePageSuccessfully" finished-at="2023-09-13T14:59:06 EET" duration-ms="60503" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: AppiumBy.id: in.converted.flyerz.debug:id/btn_next (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:app: C:\Users\Administrator\Down..., appium:appPackage: in.converted.flyerz.debug, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Administrator\Down..., automationName: uiautomator2, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2131, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: bceed0bf-5222-461f-acce-80572db2a02d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: AppiumBy.id: in.converted.flyerz.debug:id/btn_next (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:app: C:\Users\Administrator\Down..., appium:appPackage: in.converted.flyerz.debug, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Administrator\Down..., automationName: uiautomator2, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2131, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: bceed0bf-5222-461f-acce-80572db2a02d
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at appium_pom.LandingPage.hitCheckMobileNumberPage(LandingPage.java:13)
+at appium_tests.SettingsTests.changePageSuccessfully(SettingsTests.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changePageSuccessfully -->
+      </class> <!-- appium_tests.SettingsTests -->
+    </test> <!-- C:/Users/Administrator/Documents/GitHub/flyerz-e2e-testing -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
