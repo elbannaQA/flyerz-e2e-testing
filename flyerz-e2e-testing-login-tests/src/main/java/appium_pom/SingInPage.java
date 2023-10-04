@@ -17,7 +17,7 @@ public class SingInPage {
         appiumActions.click(locators.next_Btn);
         wait.until(ExpectedConditions.elementToBeClickable(locators.close_tab_button));
         appiumActions.click(locators.close_tab_button);
-        //Thread.sleep(7000);
+        Thread.sleep(7000);
         wait.until(ExpectedConditions.elementToBeClickable(locators.otp_field));
         appiumActions.sendKeys(locators.otp_field, otp);
         wait.until(ExpectedConditions.elementToBeClickable(locators.confirm_Btn));

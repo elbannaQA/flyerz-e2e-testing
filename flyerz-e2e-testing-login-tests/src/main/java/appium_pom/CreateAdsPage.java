@@ -12,7 +12,7 @@ public class CreateAdsPage {
     AppiumActions appiumActions = new AppiumActions();
     Locators locators = new Locators();
 
-    public void createAdSuccessfully(){
+    public void createAdSuccessfully(String budgetValue){
         wait.until(ExpectedConditions.elementToBeClickable(locators.createAd_btn));
         appiumActions.click(locators.createAd_btn);
         wait.until(ExpectedConditions.elementToBeClickable(locators.createAds_nextBtn));
@@ -39,7 +39,7 @@ public class CreateAdsPage {
         appiumActions.click(locators.save_Btn);
         appiumActions.click(locators.createAds_nextBtn);
         wait.until(ExpectedConditions.elementToBeClickable(locators.budget_txt));
-        appiumActions.sendKeys(locators.budget_txt,"350");
+        appiumActions.sendKeys(locators.budget_txt,budgetValue);
         String actualResult_1 = appiumActions.getText(locators.budget_txt) +" "+ appiumActions.getText(locators.currency_sign);
         System.out.println(actualResult_1);
         appiumActions.click(locators.createAds_nextBtn);

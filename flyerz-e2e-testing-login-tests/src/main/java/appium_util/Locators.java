@@ -48,5 +48,13 @@ public class Locators {
    public By adTxt = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/androidx.appcompat.widget.LinearLayoutCompat[1]/android.view.ViewGroup/android.widget.TextView[1]");
    public By adStatus = AppiumBy.id("in.converted.flyerz.debug:id/tv_ad_status_value");
    public By adBudget = AppiumBy.id("in.converted.flyerz.debug:id/tv_value");
+   public By walletBtn = AppiumBy.accessibilityId("المحفـظة");
+   public By addBalanceBtn = AppiumBy.id("in.converted.flyerz.debug:id/tv_add_budget");
+   public By selectVodafoneCash = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/androidx.appcompat.widget.LinearLayoutCompat[1]/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat");
+   public By userPinTxt = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.view.View[1]/android.widget.EditText");
+   public By userOtpTxt = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.view.View[2]/android.widget.EditText");
+   public By payBtn = AppiumBy.className("android.widget.Button");
+   public By successPaymentMessageTxt = AppiumBy.id("in.converted.flyerz.debug:id/tv_text");
+   public By okBtn = AppiumBy.id("in.converted.flyerz.debug:id/btn_ok");
 
 }
