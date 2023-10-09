@@ -14,7 +14,7 @@ public class Locators {
    public By confirm_Btn = AppiumBy.id("in.converted.flyerz.debug:id/btn_confirm");
    public By cancel_permission_popup = AppiumBy.id("android:id/button2");
    public By welcome_message = AppiumBy.id("in.converted.flyerz.debug:id/tv_statistics");
-   public By close_tab_button = AppiumBy.accessibilityId("Close tab");
+   public By close_tab_button = AppiumBy.id("com.android.chrome:id/close_button");
    public By settings_button = AppiumBy.accessibilityId("الاعدادات");
    public By editProfile_button = AppiumBy.id("in.converted.flyerz.debug:id/tv_edit_profile");
    public By email_field = AppiumBy.id("in.converted.flyerz.debug:id/et_email");
@@ -51,10 +51,15 @@ public class Locators {
    public By walletBtn = AppiumBy.accessibilityId("المحفـظة");
    public By addBalanceBtn = AppiumBy.id("in.converted.flyerz.debug:id/tv_add_budget");
    public By selectVodafoneCash = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/androidx.appcompat.widget.LinearLayoutCompat[1]/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat");
+   public By selectPaymob = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/androidx.appcompat.widget.LinearLayoutCompat[4]/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat");
    public By userPinTxt = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.view.View[1]/android.widget.EditText");
    public By userOtpTxt = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.view.View[2]/android.widget.EditText");
    public By payBtn = AppiumBy.className("android.widget.Button");
    public By successPaymentMessageTxt = AppiumBy.id("in.converted.flyerz.debug:id/tv_text");
    public By okBtn = AppiumBy.id("in.converted.flyerz.debug:id/btn_ok");
+   public By cardNumberTxt = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[3]/android.view.View/android.widget.EditText[1]");
+   public By cardHolderNameTxt = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[3]/android.view.View/android.widget.EditText[2]");
+   public By expiryDateTxt = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[3]/android.view.View/android.widget.EditText[3]");
+   public By cvvTxt = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[3]/android.view.View/android.widget.EditText[4]");
 
 }

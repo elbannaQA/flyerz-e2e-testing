@@ -2,6 +2,7 @@ package appium_pom;
 
 import appium_util.AppiumActions;
 import appium_util.Locators;
+import net.bytebuddy.implementation.bytecode.ShiftRight;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
@@ -40,4 +41,29 @@ public class WalletPage {
         appiumActions.click(locators.okBtn);
     }
 
+    public void rechargeWalletByPaymob(String rechargeValue, String cardNumber, String cardHolderName, String expiryDate, String cvv){
+        wait.until(ExpectedConditions.elementToBeClickable(locators.walletBtn));
+        appiumActions.click(locators.walletBtn);
+        wait.until(ExpectedConditions.elementToBeClickable(locators.addBalanceBtn));
+        appiumActions.click(locators.addBalanceBtn);
+        wait.until(ExpectedConditions.elementToBeClickable(locators.budget_txt));
+        appiumActions.clearText(locators.budget_txt);
+        appiumActions.sendKeys(locators.budget_txt, rechargeValue);
+        appiumActions.click(locators.next_Btn);
+        wait.until(ExpectedConditions.elementToBeClickable(locators.selectPaymob));
+        appiumActions.click(locators.selectPaymob);
+        wait.until(ExpectedConditions.elementToBeClickable(locators.cardNumberTxt));
+        appiumActions.sendKeys(locators.cardNumberTxt,cardNumber);
+        appiumActions.sendKeys(locators.cardHolderNameTxt, cardHolderName);
+        appiumActions.sendKeys(locators.expiryDateTxt,expiryDate);
+        appiumActions.sendKeys(locators.cvvTxt,cvv);
+        appiumActions.click(locators.payBtn);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locators.successPaymentMessageTxt));
+        String actualResult = appiumActions.getText(locators.successPaymentMessageTxt);
+        String expectedResult = "تم عملية الدفع بنجاح";
+
+        Assert.assertEquals(actualResult, expectedResult, "Recharge wallet is failed");
+        wait.until(ExpectedConditions.elementToBeClickable(locators.okBtn));
+        appiumActions.click(locators.okBtn);
+    }
 }

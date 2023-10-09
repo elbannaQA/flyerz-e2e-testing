@@ -27,4 +27,12 @@ public class WalletTests {
         walletPage.rechargeByVodafoneCash("1000", "1010101010",
                 "123456","123456");
     }
+
+    @Test
+    public void verifyThatUsersAreAbleToRechargeByPaymob() throws InterruptedException {
+        landingPage.hitCheckMobileNumberPage();
+        singInPage.loginInSuccessfully("1003030921","123456");
+        walletPage.rechargeWalletByPaymob("1000","5123456789012346",
+                "Test","12/25","123");
+    }
 }
