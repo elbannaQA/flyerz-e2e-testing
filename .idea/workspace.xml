@@ -4,50 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc3a3c4a-22cf-4115-94f0-70ca4211722f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/main/java/appium_pom/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/main/java/helpers/DeleteUsersHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/test/java/api_tests/DeleteUsersTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/test/java/api_tests/FireBaseOTPTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/test/java/api_tests/LoginAndRegistrationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/test/java/api_tests/MobileVerificationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/test/java/api_tests/SocialMediaChannelsTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/test/java/appium_tests/HomePageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/allTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/allTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/main/java/api/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/main/java/api/Auth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/main/java/api_util/ApiBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/main/java/api_util/ApiBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/main/java/api_util/AppiumBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/main/java/appium_pom/CreateAdsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/main/java/appium_pom/CreateAdsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/main/java/appium_pom/SettingsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/main/java/appium_pom/SettingsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/main/java/appium_pom/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/main/java/appium_pom/SignUpPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/main/java/appium_pom/SingInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/main/java/appium_pom/SingInPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/main/java/appium_util/AppiumActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/main/java/appium_util/AppiumActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/main/java/appium_util/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/main/java/appium_util/Locators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/test/java/appium_tests/CreateAds.java" beforeDir="false" afterPath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/test/java/appium_tests/CreateAds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/test/java/appium_tests/SeparateSignUpAndSignInTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/test/java/appium_tests/SeparateSignUpAndSignInTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/test/java/appium_tests/SettingsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/test/java/appium_tests/SettingsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/test/java/appium_tests/WalletTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/test/java/appium_tests/WalletTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/test/java/firebase_otp_tests/FireBaseOTPTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/test/java/login_tests/LoginAndRegistrationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/test/java/mobile_check_tests/MobileVerificationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flyerz-e2e-testing-login-tests/src/test/java/socialMediaChannels/SocialMediaChannelsTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/All Test Suite/C__Users_Administrator_Documents_GitHub_flyerz-e2e-testing.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/All Test Suite/C__Users_Administrator_Documents_GitHub_flyerz-e2e-testing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/All Test Suite/C__Users_Administrator_Documents_GitHub_flyerz-e2e-testing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/All Test Suite/C__Users_Administrator_Documents_GitHub_flyerz-e2e-testing.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-firebase_otp_tests.FireBaseOTPTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-firebase_otp_tests.FireBaseOTPTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-login_tests.LoginAndRegistrationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-login_tests.LoginAndRegistrationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-mobile_check_tests.MobileVerificationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-mobile_check_tests.MobileVerificationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-socialMediaChannels.SocialMediaChannelsTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-socialMediaChannels.SocialMediaChannelsTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/All Test Suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/All Test Suite/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/All Test Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/All Test Suite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/All Test Suite/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/All Test Suite/methods-not-run.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/All Test Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/All Test Suite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/All Test Suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/All Test Suite/testng.xml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7d4aea47-69f8-40f4-b978-4a2bbdef0f73" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,28 +51,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;appium-branch&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="TestNG.WalletTests.verifyThatUsersAreAbleToRechargeByPaymob">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="flyerz-e2e-testing" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="flyerz-e2e-testing" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CreateAds.checkThatAdsCreatedSuccessfully" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="flyers-rest-assured" />
       <extension name="coverage">
